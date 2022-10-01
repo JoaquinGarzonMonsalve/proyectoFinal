@@ -1,0 +1,348 @@
+.tituloInicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  border: solid 2px rgb(75, 74, 74);
+  background-color: gray;
+  margin-top: 5px;
+  color: rgb(214, 137, 43);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 69px;
+  height: 80px;
+}
+
+.containerHeader {
+  background-color: aliceblue;
+}
+
+.containerHeader:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(173deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+}
+
+.containerTitulo:hover {
+  background: rgb(242, 242, 242);
+  background: radial-gradient(circle, rgb(242, 242, 242) 0%, rgb(0, 0, 0) 100%);
+}
+
+@media screen and (max-width: 1600px) {
+  .containerHeader {
+    margin-left: 1px;
+  }
+}
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 50px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 315px) {
+  h1 {
+    font-size: 20px;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+}
+.imagenMain {
+  margin-bottom: 8px;
+  padding-right: 0px;
+}
+
+.imagenesMain {
+  border: 1px;
+  margin-right: 7px;
+}
+
+h2 {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.listaMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listaMain li {
+  list-style: none;
+}
+.listaMain li a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+.listaMain li a:hover {
+  color: black;
+  background-color: bisque;
+}
+
+a:hover {
+  color: black;
+  background-color: bisque;
+}
+
+.contenedorMain {
+  background-color: bisque;
+  margin-left: 3px;
+  margin-right: 8px;
+  padding: 10px;
+}
+
+.mapaMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.anima {
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+}
+
+@-webkit-keyframes roll-in-left {
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.image1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.image2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.image3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.image4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@media screen and (max-width: 1100px) {
+  .imagenesMain {
+    margin-left: 2px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .imageneMain {
+    margin-left: 10px;
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h6 {
+  flex-direction: column;
+  flex-direction: row;
+}
+
+body {
+  background-color: gray;
+  margin: 10px;
+}
+
+small p {
+  color: white;
+  font-size: 20px;
+}
+
+.info {
+  color: white;
+  font-size: 20px;
+}
+
+.containerPie {
+  margin: 7px;
+  background-color: bisque;
+}
+
+.containerForm {
+  background-color: bisque;
+  margin-left: 3px;
+}
+
+.formFooter {
+  padding: 10px;
+}
+
+.redes:hover {
+  scale: 1.5;
+}
+
+/* pagina 2 */
+.bodyInscribete {
+  margin: 20px;
+  padding: 20px;
+}
+
+.mainInscribete {
+  padding: 0px;
+  background-color: bisque;
+  margin-right: 20px;
+}
+
+.tarjetas {
+  height: 400px;
+  align-items: center;
+  padding-left: 90px;
+  padding-bottom: 15px;
+}
+
+.containerTarjetas {
+  margin-left: 10px;
+  padding: 20px;
+  width: 98%;
+}
+
+.card {
+  width: 18rem;
+}
+
+@media screen and (max-width: 1174px) {
+  .tarjetas {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 514px) {
+  .tarjetas {
+    padding-left: 60px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .tarjetas {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tarjetas {
+    padding-left: 10px;
+  }
+  .bodyInscribete {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+/* pagina 2 */
+.bodyInscribete {
+  margin: 20px;
+  padding: 20px;
+}
+
+.mainInscribete {
+  padding: 0px;
+  background-color: bisque;
+  margin-right: 20px;
+}
+
+.tarjetas {
+  height: 400px;
+  align-items: center;
+  padding-left: 90px;
+  padding-bottom: 15px;
+}
+
+.containerTarjetas {
+  margin-left: 10px;
+  padding: 20px;
+  width: 98%;
+}
+
+.card {
+  width: 18rem;
+}
+
+@media screen and (max-width: 1174px) {
+  .tarjetas {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 514px) {
+  .tarjetas {
+    padding-left: 60px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .tarjetas {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tarjetas {
+    padding-left: 10px;
+  }
+  .bodyInscribete {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+/* pagina 5 */
+.rutina1 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  border: 3px solid red;
+}
+
+.rutina1 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=estilos.css.map */

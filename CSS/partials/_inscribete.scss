@@ -1,0 +1,83 @@
+/* pagina 2 */
+
+.bodyInscribete{
+    margin: 20px;
+    padding: 20px;
+}
+
+.mainInscribete{
+    padding: 00px;
+    background-color: bisque;
+    margin-right: 20px;
+}
+
+.tarjetas{
+    height: 400px;
+    align-items: center;   
+
+    padding-left: 90px;
+    padding-bottom: 15px;
+    
+   
+    
+}
+
+.containerTarjetas{
+    margin-left: 10px;
+   
+    padding: 20px;
+    width: 98%;
+
+}
+
+
+.card{
+
+    width: 18rem;
+
+}
+
+@media screen and (max-width: 1174px){
+
+    .tarjetas{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 514px){
+
+    .tarjetas{
+        padding-left: 60px;
+    }
+}
+    
+
+@media screen and (max-width: 430px){
+
+        .tarjetas{
+            padding-left: 10px;
+        }
+    }
+
+@media screen and (max-width: 400px){
+
+            .tarjetas{
+                padding-left: 10px;
+            }
+
+
+            .bodyInscribete{
+                margin: 10px;
+                padding: 10px;
+            }
+    
+
+       
+
+        
+        
+        
+        
+    }
+
+    
