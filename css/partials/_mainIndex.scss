@@ -1,0 +1,126 @@
+.imagenMain{
+    margin-bottom: 8px;
+    padding-right: 0px;
+
+}
+
+.imagenesMain{
+    border: 1px;
+    
+    margin-right: 7px;
+}
+
+
+
+
+
+@mixin flex ( $direction,$justify,$aling  ){
+    display: flex ;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+    
+}
+
+h2{
+    color: black;
+    @include flex(row,center,center);
+}
+
+.listaMain{
+
+    @include flex(column,center,center);
+    li{list-style: none;
+
+        a{
+            list-style: none;
+            color: adjust-hue($color: #000000, $degrees: 0);
+            text-decoration: none;
+
+
+        }
+        a:hover{
+            color: black;
+            background-color: bisque;
+        }
+    }
+
+}
+
+a:hover{
+    color: black;
+    background-color: bisque;
+
+}
+
+.contenedorMain{
+    background-color: bisque;
+    margin-left: 3px;
+    margin-right: 8px;
+    padding: 10px;
+}
+
+.mapaMain{
+    @include flex(column,center,center);
+
+}
+
+.anima{
+
+           
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+            animation: roll-in-left 0.6s ease-out both;
+
+
+}
+@-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+@for $a from 1 through 4{
+
+    .image#{$a}{
+        animation-delay: $a*0.5s;
+    }
+
+ }
+
+
+@media screen and (max-width: 1100px){
+    .imagenesMain{
+       margin-left: 2px;
+       
+    }
+    
+    }
+
+ @media screen and (max-width: 1100px){
+        .imageneMain{
+           margin-left: 10px;
+           padding-left: 20px;
+           width: 100%;
+           
+        }
+        
+        }
